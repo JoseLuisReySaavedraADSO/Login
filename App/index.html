@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CONEXIÓN CON GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CONEXIÓN CON CSS -->
     <link rel="stylesheet" href="Resources/style.css">
     <!-- CONEXIÓN CON BOXICONS -->
@@ -20,26 +24,26 @@
         <section class="section">
 
             <!-- FIRST CONTAINER -->
-            <div class="section__image">
-                <img src="https://images.vexels.com/media/users/3/157295/isolated/preview/5ab1a21aaafa93397c0d6eedcb24731e-icono-de-computadora-portatil.png" alt="">
-            </div>
+            <figure class="section__image">
+                <img class="section__image--img" src="https://images.vexels.com/media/users/3/157295/isolated/preview/5ab1a21aaafa93397c0d6eedcb24731e-icono-de-computadora-portatil.png" alt="">
+            </figure>
 
             <!-- SECOND CONTAINER    -->
             <div class="section__form">
                 <h1 class="section__form--title">Member Login</h1>
                 <form class="form">
-                    <div>
+                    <div class="form__container">
                         <i class='bx bxs-envelope'></i>
-                        <input placeholder="Email" type="text" name="user" id="user">
+                        <input class="form__input" placeholder="Email" type="text" name="user" id="user">
                     </div>
-                    <div>
+                    <div class="form__container">
                         <i class='bx bxs-lock-alt'></i>
-                        <input placeholder="Password" type="password" name="password" id="password">
+                        <input class="form__input" placeholder="Password" type="password" name="password" id="password">
                     </div>
-                    <button>Login</button>
+                    <button class="form__button">Login</button>
                 </form>
-                <h4>Forgot <a href="">Username / Password</a></h4>
-                <a href="">Create your account <i class='bx bxs-right-arrow-alt'></i></a>
+                <h4>Forgot <a class="section__form--forgot" href="#">Username / Password</a></h4>
+                <a class="section__form--create" href="#">Create your account <i class='bx bxs-right-arrow-alt'></i></a>
             </div>
 
         </section>
